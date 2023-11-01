@@ -1,0 +1,18 @@
+//return
+//retorna um valor
+//termina a funcao
+
+function criaMultiplicador(criaMultiplicador) {
+    //multiplicador
+    return function(n) {
+        return n * criaMultiplicador;
+    };
+}
+
+const duplica = criaMultiplicador(2);
+const triplica = criaMultiplicador(3);
+const quadriplica = criaMultiplicador(4);
+
+console.log(duplica(3));
+console.log(triplica(2));
+console.log(quadriplica(10));
