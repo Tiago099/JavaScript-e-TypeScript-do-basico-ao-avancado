@@ -1,8 +1,6 @@
-//
-const nomes =  ['Maria', 'Joao','Eduardo', 'Gabriel', 'Julia']
-
-
-// nomes.splice(indice, delete, elem1, elem2, elem3);
-// pop
-const removidos = nomes.splice(4, 1);
-console.log(nomes, removidos);
+const a1 = [1, 2, 3];
+const a2 = [4, 5, 6];
+//const a3 = a1.concat(a2, [7, 8, 9, 'Tiago']);
+// ...rest -> ... spread
+const a3 = [...a1, 'Tiago', ...a2, ...[7,  8,  9]];
+console.log(a3);
